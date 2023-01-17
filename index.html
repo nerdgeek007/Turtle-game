@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width,initial-scale=1.0" />
+		<title></title>
+		<link rel="stylesheet" href="./base.css" />
+	</head>
+
+	<body>
+		<h1 class="wrong">Press "Arrow Keys"</h1>
+		<img src="./turtle.png" alt="turtle" class="turtle" />
+
+		<style>
+			.turtle {
+				position: relative;
+				--x: 20px;
+				--y: 0px;
+				--rotateX: 0deg;
+				--rotate: 0deg;
+				width: 200px;
+				transform: translateX(var(--x)) translateY(var(--y))
+					rotateY(var(--rotateX)) rotate(var(--rotate));
+				transition: transform 0.2s;
+			}
+			.show {
+				opacity: 0;
+			}
+			.wrong {
+				position: absolute;
+				opacity: 1;
+				top: 0;
+				left: 20%;
+				margin: 0 auto;
+				color: black;
+				font-size: 50px;
+				transition: all 0.2s;
+			}
+		</style>
+		<script src="./turtle.js"></script>
+	</body>
+</html>
